@@ -19,13 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\EnginePch.h" />
+    <ClInclude Include="src\Engine\Event\ApplicationEvent.h" />
+    <ClInclude Include="src\Engine\Event\Event.h" />
+    <ClInclude Include="src\Engine\Event\KeyEvent.h" />
+    <ClInclude Include="src\Engine\Event\MouseEvent.h" />
     <ClInclude Include="src\Engine\Log.h" />
-    <ClInclude Include="src\Engine\Engine.h" />
+    <ClInclude Include="src\Engine.h" />
     <ClInclude Include="src\Engine\Application.h" />
     <ClInclude Include="src\Engine\Core.h" />
     <ClInclude Include="src\Engine\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\EnginePch.cpp" />
     <ClCompile Include="src\Engine\Log.cpp" />
     <ClCompile Include="src\Engine\Application.cpp" />
   </ItemGroup>
@@ -116,6 +122,8 @@
       <PreprocessorDefinitions>PLATFORM_WIN;BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)\Han\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>EnginePch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,6 +155,8 @@
       <PreprocessorDefinitions>PLATFORM_WIN;BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)\Han\vendor\spdlog\include</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>EnginePch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

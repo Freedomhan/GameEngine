@@ -1,7 +1,8 @@
 #pragma once
-#include <memory>
 #include "Core.h"
+#include "../EnginePch.h"
 #include <spdlog/spdlog.h>
+#include <spdlog/fmt/ostr.h>
 namespace Engine {
 
 	class HAN_API Log {
